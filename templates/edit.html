@@ -11,8 +11,9 @@
     <input type="text" name="body"  placeholder="Tell us anything" value= "{{post.body}}"required> </input>
     <img class="post-border" src="{{ post.image.url }}"></br>
     <input type="file" name= "image">
-    <a href="{% url 'index' %}">Cancel</a> 
-    <input type="submit" value="Update"/>   
+    <a id='btn2' href="{% url 'index' %}">Cancel</a> 
+    <input id="btn" type="submit" value="Update"/>  
+     
 
 </form>
   </section>  
