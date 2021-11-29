@@ -1,0 +1,144 @@
+/*
+post table
+
+*/
+
+body {
+  height: 100%;
+}
+.content {
+  max-width: 600px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: turquoise;
+}
+
+.left {
+  width: 55%;
+}
+
+.right {
+  width: 45%;
+}
+
+.right img{
+  width: 100%;
+}
+
+.posts li .name_body img {
+  width: 52%;
+}
+
+.posts li {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  width: 100%;
+  padding-bottom: 4%;
+  margin-bottom: 4%;
+
+}
+.posts li .logo {
+  flex-basis: 15%;
+}
+.posts .logo img {
+  width: 40%;
+}
+.posts li .name_body {
+  flex-basis: 85%;
+}
+.posts li .name_body .name {
+  font-weight: bold;
+}
+
+.posts li .name_body .datetime {
+  color: gray;
+}
+/*
+posts
+*/
+.post ul {
+  padding: 0;
+  padding: 17px;
+}
+@media screen and (max-width: 500px) {
+  .posts li .name_body .name {
+    font-size: 40px;
+  }
+}
+/*
+form
+*/
+.post_form {
+  padding: 20px 14px;
+  border-bottom: 1px solid #ccc;
+}
+
+.post_form .main-header {
+  display: flex;
+  text-align: left;
+  padding-bottom: 2%;
+}
+
+.post_form .main-header h1.heading {
+  margin: 2% 2%;
+}
+
+
+.post_form input {
+  width: 64%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+
+.post_form input[type="file"] {
+  width: 53%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+
+.post_form input[type="Submit"] {
+  width: 70%;
+  margin-bottom: 10px;
+  padding: 10px 15px;
+  border: 1px solid #ccc;
+}
+
+.post_form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.posts li .menu_icon {
+  width: 20px;
+  position: absolute;
+  right: 30px;
+  top: 10px;
+}
+.posts li .menu {
+  display: grid;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+  border: 1px solid #ccc;
+  background-color: white;
+  padding: 10px 20px;
+  font-size: 12px;
+  border-radius: 3px;
+}
+.post li {
+  position: relative;
+  display: flex;
+  border-bottom: 1px solid #ccc;
+  padding: 20px 48px;
+  list-style: none;
+}
+.posts li .menu a {
+  text-decoration: none;
+}
+
+.content .post_form img {
+  width: 70%;
+}
