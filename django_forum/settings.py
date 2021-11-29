@@ -76,6 +76,17 @@ TEMPLATES = [
 WSGI_APPLICATION = 'django_forum.wsgi.application'
 
 
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'd2ojlole7f3k7j',
+        'USER': 'kquyhakawfwmjo',
+        'HOST': 'ec2-23-23-219-25.compute-1.amazonaws.com',
+        'PORT': 5432,
+        'PASSWORD': '150868556edb92de112f40a9dce2173e1ba1ec69fd02298dc9395d3d4f08012f',
+    }
+}
+
 # Database
 # https://docs.djangoproject.com/en/3.2/ref/settings/#databases
 
