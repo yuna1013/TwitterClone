@@ -39,8 +39,9 @@
       <div> {{ post.name }} </div> 
         <div> {{ post.created_at }} </div> 
          <p> {{ post.body }}</p> 
+         {% if post.image %}
          <img class="post-border" src="{{ post.image.url }}"></br>
-
+         {% endif %}
          <form id="likes-form" action="{% url 'like_post' post.pk %}" method='POST'>
           {% csrf_token %}
       <button class="like-button" type="submit", name="post_id", value="{{ post.id }}" href="post_id">

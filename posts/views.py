@@ -23,7 +23,7 @@ def index(request):
             form.save()
             return HttpResponseRedirect('/')
         else:
-            return HttpResponseRedirect(form.erros.as_json())
+            return HttpResponseRedirect(form.errors.as_json())
     posts = Post.objects.all().order_by('-created_at')[:20]
 
     return render(request, 'posts.html',
